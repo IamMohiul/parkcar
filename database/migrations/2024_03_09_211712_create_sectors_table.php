@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('sectors', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('hourly_price');
             $table->timestamps();
         });
     }
